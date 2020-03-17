@@ -9,3 +9,14 @@ $(window).scroll( () => {
     }
 
 } );
+
+// Typing Effect on Index Background Image
+let options = {
+    strings: ["Shashank Keshari", "Designer", "Video Editor", "Cinematographer"],
+    typeSpeed: 150,
+    backspeed:200,
+    loop: true,
+    smartBackspace: true
+};
+
+let typedEffect = new Typed(".typing", options)
