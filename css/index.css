@@ -90,6 +90,33 @@ body {
     color: #fff;
     margin-left: 5%;
 }
+.typing {
+    position: relative;
+    margin-left: 10px;
+}
+
+.typing::after {
+    content: "";
+    position: absolute;
+    right: -5px;
+    width: 5px;
+    height: 100%;
+    border-right: 3px solid #fff;
+    animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.typed-cursor { /* changing Cursor Blinking Effect of typed.js */
+    display: none;
+}
 
 /* about us styling */
 .about-me {
@@ -113,12 +140,6 @@ body {
     width: 50%;
     object-fit: cover;
     margin-top: 2%;
-}
-
-.profile-image img:hover {
-    box-shadow: 0 1px 3px rgba(0,0,0,.12),
-                0 1px 2px rgba(0,0,0,.24);
-    transition: all .5s ease-in-out;
 }
 
 .profile-bio-heading {

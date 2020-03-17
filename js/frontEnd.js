@@ -13,10 +13,9 @@ $(window).scroll( () => {
 // Typing Effect on Index Background Image
 let options = {
     strings: ["Shashank Keshari", "Designer", "Video Editor", "Cinematographer"],
-    typeSpeed: 150,
+    typeSpeed: 200,
     backspeed:200,
-    loop: true,
-    smartBackspace: true
+    loop: true
 };
 
 let typedEffect = new Typed(".typing", options)
