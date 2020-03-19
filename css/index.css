@@ -234,8 +234,164 @@ body {
 .cont {
     display: block;
 }
+
+/* services styling */
+.services {
+    text-transform: uppercase;
+    margin-top: 5%;
+}
+.services-heading {
+    font-size: 30px;
+}
+
+.service {
+    margin: 10px;
+    margin-top: 10%;
+    border-radius: 0;
+    background-color: lightgray;
+}
+.service-1 h1, .service-2 h1, .service-3 h1, .service-4 h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* accomplishment styling */
+.accomplishment {
+    object-fit: cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/leaf.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.accomplishment .number {
+    font-size: 50px;
+}
+
+.accomplishment h1 {
+    font-size: 20px;
+}
+
 /* portfolio styling */
 .portfolio {
     text-transform: uppercase;
     margin-top: 5%;
+}
+.portfolio-heading {
+    font-size: 30px;
+}
+.custom-portfolio {
+    border: 2px dashed black;
+    width: 100%;
+    height: 500px;
+}
+
+/* contact styling */
+.contact-form {
+    margin-top: 5%;
+    text-transform: uppercase;
+}
+
+.custom-form {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input[type=text], input[type=email], input[type=submit]{
+    border-radius: 0;
+}
+
+input[type=submit] {
+    margin-top: 10px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.custom-form textarea {
+    border-radius: 0;
+    resize: none;
+}
+
+/* address-section styling */
+.address-section {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/green.jpg);
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.address-info {
+    font-size: 20px;
+}
+
+.phone-number h1, .email h1, .address h1 {
+    font-size: 30px;
+}
+
+/* footer styling */
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+}
+
+.brandName h1 {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 10%;
+}
+
+.companyName h1 {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 10%;
+}
+
+.companyName .heart {
+    color: red;
+}
+
+.brandSocial .socialicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 50px;
+    margin-top: 3%;
+}
+
+.brandSocial .socialicon li a {
+    text-decoration: none;
+    border: none;
+    color: #fff;
+}
+
+.brandSocial .socialicon li a:hover {
+    color: orange;
 }
