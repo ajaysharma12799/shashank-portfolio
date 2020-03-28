@@ -1,0 +1,74 @@
+/* 
+    Small Devices ( LandScape Phones )
+*/
+@media (max-width: 567px) {
+    /* Index Image styling */
+    .innerImageText-1 h3 {
+        text-align: center;
+        font-size: 40px;
+    }
+    .innerImageText-2 .typing {
+        left: 20%;
+        font-size: 30px;
+        text-align: center;
+
+    }
+    /* profile information styling */
+    .profile-bio {
+        text-align: center;
+    }
+    .list-title {
+        float: left;
+    }
+    .cont {
+        float: right;
+    }
+    /* accomplishment styling */
+    .project-completed h1, 
+    .happy-customer h1, 
+    .cup-of-coffee h1 {
+        font-size: 20px;
+    }
+    /* address styling */
+    .address-info {
+        font-size: 25px;
+    }
+    .phone-number h1,
+    .address h1,
+    .email h1 {
+        font-size: 20px;
+    }
+    .address {
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    /* footer styling */
+    .footer {
+        height: 100%;
+    }
+    .brandName,
+    .companyName {
+        border-bottom: 1px solid black;
+    }
+}
+
+/*  
+    Medium Devices ( Tablets )
+*/
+@media (min-width: 768px) {
+
+}
+
+/*  
+    large Device ( Desktop )
+*/
+@media (min-width: 992px) {
+
+}
+
+/*  
+    Extra Large Device ( Large Desktop )
+*/
+@media (min-width: 1200px) {
+
+}

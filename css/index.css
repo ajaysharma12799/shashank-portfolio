@@ -94,11 +94,9 @@ body {
 
 .innerImageText-2 .typing {
     color: #fff;
-    margin-left: 8%;
 }
 .typing {
     position: relative;
-    margin-left: 10px;
 }
 
 .typing::after {

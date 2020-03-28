@@ -11,9 +11,11 @@ $(window).scroll(() => {
 
 // Typing Effect on Index Background Image
 let options = {
-    strings: ["Shashank Keshari", "Designer", "Video Editor", "Cinematographer"],
+    // strings:['git push --force \n `pushed to origin with option force`'],
+    strings: ["i am shashank keshari", "i am designer", "i am video editor", "i am cinematographer"],
     typeSpeed: 200,
-    backspeed: 200,
+    backspeed: 2000,
+    smartBackspace:true,
     loop: true
 };
 
