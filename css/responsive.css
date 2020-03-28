@@ -10,7 +10,8 @@
         font-size: 40px;
     }
     .innerImageText-2 .typing {
-        left: 20%;
+        /* left: 20%; */
+        margin-left: -10%;
         font-size: 25px;
         text-align: center;
 
