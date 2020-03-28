@@ -19,35 +19,39 @@ let options = {
 
 let typedEffect = new Typed(".typing", options);
 
-// Smooth Scroll Animation
-function smoothScroll(target, duration) {
-    var target = document.querySelector(target); // Getting target
-    let targetPosition = target.getBoundingClientRect().top; // Getting target position
-    let startPosition = window.pageYOffset; // Getting start position from y-axis
-    let distance = targetPosition - startPosition;
-    var startTime = null;
+// Smooth Scroll
+$('a[href*="#"]') // Select all links with hashes
 
-    function animation(currentTime) {
-        if (startTime === null) {
-            startTime = currentTime;
-            let timeElapsed = currentTime - startTime;
-            let run = ease(timeElapsed, startPosition, distance, duration);
-            window.scroll(0, run);
-            if(timeElapsed < duration) {
-                requestAnimationFrame(animation);
+    // Remove links that don't actually link to anything
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .click(function (event) {
+        // On-page links
+        if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+            location.hostname == this.hostname
+        ) {
+            // Figure out element to scroll to
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            // Does a scroll target exist?
+            if (target.length) {
+                // Only prevent default if animation is actually gonna happen
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000, function () {
+                    // Callback after animation
+                    // Must change focus!
+                    var $target = $(target);
+                    $target.focus();
+                    if ($target.is(":focus")) { // Checking if the target was focused
+                        return false;
+                    } else {
+                        $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                        $target.focus(); // Set focus again
+                    };
+                });
             }
         }
-    }
-
-    function ease(t, b, c, d) {
-        t /= d / 2;
-        if(t < 1) return c / 2 *t *t +b;
-        t--;
-        return -c / 2 *(t * (t - 2) - 1) + b;
-    }
-    requestAnimationFrame(animation);
-}
-
-let about_me = document.querySelector(".about").addEventListener("click", () => {
-    smoothScroll("about-me", 2000);
-});
+    });

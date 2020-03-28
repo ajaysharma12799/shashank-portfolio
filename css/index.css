@@ -19,6 +19,12 @@ body {
     font-family: 'Baloo Chettan 2', cursive;
 }
 
+/* Navbar Toggler */
+.navbar-toggler{
+    border: 2px solid #fff !important;
+    border-radius: 5px;
+}
+
 /* brand styling */
 .nav-shrink {
     background-color: rgba(0,0,0,.5);
@@ -69,26 +75,26 @@ body {
 .innerImageText-1 {
     color: #fff;
     position: relative;
-    top: 35%;
-    font-size: 10px;
+    top: 40%;
     text-transform: uppercase; 
 }
 
-.innerImageText-2 {
-    font-size: 30px;
+.innerImageText-1 h3 {
+    font-size: 40px;
 }
 
 .innerImageText-2 h2{
     color: #fff;
-    top: 40%;
-    left: 40%;
+    font-size: 50px;
+    top: 50%;
+    left: 38%;
     position: absolute;
     text-transform: uppercase; 
 }
 
 .innerImageText-2 .typing {
     color: #fff;
-    margin-left: 5%;
+    margin-left: 8%;
 }
 .typing {
     position: relative;
@@ -368,30 +374,21 @@ input[type=submit] {
 }
 
 .companyName h1 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: lighter;
     margin-top: 10%;
-}
-
-.companyName .heart {
-    color: red;
 }
 
 .brandSocial .socialicon {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 
-    font-size: 50px;
-    margin-top: 3%;
+    font-size: 30px;
+    margin-top: 8%;
 }
 
 .brandSocial .socialicon li a {
     text-decoration: none;
     border: none;
-    color: #fff;
-}
-
-.brandSocial .socialicon li a:hover {
-    color: orange;
 }
